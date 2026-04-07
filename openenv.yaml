@@ -1,0 +1,19 @@
+name: ai-gold-finder
+version: 0.1
+
+environment:
+  entry_point: gold_env:GoldDetectionEnv
+
+tasks:
+
+  - id: easy
+    description: detect gold in simple scan
+    reward_range: [0.0,1.0]
+
+  - id: medium
+    description: detect gold with noise
+    reward_range: [0.0,1.0]
+
+  - id: hard
+    description: detect gold with complex signals
+    reward_range: [0.0,1.0]
